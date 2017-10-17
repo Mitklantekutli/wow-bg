@@ -1,0 +1,19 @@
+.card {
+  width: 220px;
+  height: 380px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  background: lightgreen;
+  margin: 20px;
+}
+
+.card img {
+  margin-top: 4px;
+  width: 220px;
+  height: 340px;
+  box-sizing: content-box;
+  border: 1px solid black;
+}
