@@ -5,6 +5,7 @@ export class CardProviver {
     var cards = [];
 
     var c1 = new Card();
+    c1.id=0;
     c1.tags = [];
     c1.tags.push('spell');
     c1.tags.push('rogue');
@@ -14,6 +15,7 @@ export class CardProviver {
     c1.nameEn = 'blind';
 
     var c2 = new Card();
+    c2.id=1;
     c2.tags = [];
     c2.tags.push('spell');
     c2.tags.push('rogue');
@@ -23,6 +25,7 @@ export class CardProviver {
     c2.nameEn = 'fient';
 
     var c3 = new Card();
+    c3.id=2;
     c3.tags = [];
     c3.tags.push('spell');
     c3.tags.push('rogue');

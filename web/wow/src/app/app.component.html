@@ -1,25 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="display: flex">
-  <div class="card">
-    <div>{{card1.nameRu}}</div>
-    <div>{{card1.nameEn}}</div>
-    <div>
-      <img style="image-orientation: from-image" src="{{card1.url}}">
-    </div>
-  </div>
-  <div class="card">
-    <div>{{card2.nameRu}}</div>
-    <div>{{card2.nameEn}}</div>
-    <div>
-      <img style="image-orientation: from-image" src="{{card2.url}}">
-    </div>
-  </div>
-  <div class="card">
-    <div>{{card3.nameRu}}</div>
-    <div>{{card3.nameEn}}</div>
-    <div>
-      <img style="image-orientation: from-image" src="{{card3.url}}">
-    </div>
-  </div>
 
-</div>
+<nav>
+  <a routerLink="/priest" routerLinkActive="active">Priest</a>
+  <a routerLink="/mage" routerLinkActive="active">Mage</a>
+</nav>
+<router-outlet></router-outlet>

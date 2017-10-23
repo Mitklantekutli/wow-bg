@@ -1,26 +1,23 @@
-.card-holder {
+.images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  background: black;
 }
-
-.card {
+.image-div {
   width: 35%;
   min-width: 35%;
-  border: 2px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-flow: column;
-  background: lightgreen;
   margin: 20px;
   text-align: center;
 }
 
-.card img {
+.image-div img {
   margin-bottom: -4px;
   position: relative;
   max-width: 100%;
   max-height: 100%;
 }
-
