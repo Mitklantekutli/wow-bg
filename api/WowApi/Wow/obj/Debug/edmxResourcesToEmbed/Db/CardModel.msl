@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CardDbModelStoreContainer" CdmEntityContainer="CardDbEntities">
+    <EntitySetMapping Name="Pictures">
+      <EntityTypeMapping TypeName="CardDbModel.Picture">
+        <MappingFragment StoreEntitySet="Pictures">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameRu" ColumnName="NameRu" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="NameFr" ColumnName="NameFr" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="DungeonName" ColumnName="DungeonName" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
