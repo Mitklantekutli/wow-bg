@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Web.Cors;
 using System.Web.Http;
 using Newtonsoft.Json;
 
@@ -23,6 +24,8 @@ namespace Wow
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.EnableCors();
         }
     }
 }

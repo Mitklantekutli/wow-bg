@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Wow.Db;
 
 namespace Wow.Controllers
 {
     [RoutePrefix("api")]
+    [EnableCors("*", "*", "*")]
     public class PictureController : ApiController
     {
         [HttpGet]
@@ -28,6 +30,17 @@ namespace Wow.Controllers
             using (var context = new CardDbEntities())
             {
                 var skills = context.Pictures.Where(x => x.Discriminator == "SkillPicture" && x.Type == "Spell").ToList();
+                return Ok(skills);
+            }
+        }
+        [HttpGet]
+        [Route("spell/{player_class}")]
+        public IHttpActionResult GetSpells(string player_class)
+        {
+            using (var context = new CardDbEntities())
+            {
+                var skills = context.Pictures.Where(x =>
+                    x.Discriminator == "SkillPicture" && x.Type == "Spell" && x.Class == player_class).ToList();
                 return Ok(skills);
             }
         }
